@@ -101,7 +101,7 @@ const question1 = (myNumber) => {
   const question5 = (myTemp) => {
     let myWeather;
     /////// write your TERNARY OPERATOR statement below this line /////////
-    myWeather = myTemp >= 75? "Great weather!": "Still cold.";
+    myWeather = myTemp >= 75 ? "Great weather!": "Still cold.";
     /////// write your TERNARY OPERATOR statement above this line /////////
     return myWeather;
   };
