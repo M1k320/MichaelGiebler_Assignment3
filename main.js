@@ -13,7 +13,9 @@ given in the comments.
 const question1 = (myNumber) => {
     let myDept;
     /////// write your IF statement below this line /////////
-  
+    if (myNumber > 1){
+        myDept = myNumber;
+    }
     /////// write your IF statement above this line /////////
     return myDept;
   };
@@ -27,7 +29,12 @@ const question1 = (myNumber) => {
   const question2 = (myValue) => {
     let myLang;
     /////// write your IF statement below this line /////////
-  
+    if(myValue.length == 10){
+        myLang = "JavaScript";
+    }
+    else{
+        myLang = "Python";
+    }
     /////// write your IF statement above this line /////////
     return myLang;
   };
@@ -41,7 +48,15 @@ const question1 = (myNumber) => {
   const question3 = (myValue) => {
     let myLang;
     /////// write your IF statement below this line /////////
-  
+    if(myValue.length == 10){
+        myLang = "JavaScript";
+    }
+    else if(myValue.length > 3){
+        myLang = "PHP";
+    }
+    else{
+        myLang = "Python";
+    }
     /////// write your IF statement above this line /////////
     return myLang;
   };
@@ -55,7 +70,22 @@ const question1 = (myNumber) => {
   const question4 = (myNumber) => {
     let myFaveFood;
     /////// write your SWITCH statement below this line /////////
-  
+    switch(myNumber){
+        case 1: 
+            myFaveFood = "Pizza";
+            break;
+        case 2:
+            myFaveFood = "Hamburger";
+            break;
+        case 3:
+            myFaveFood = "Ice Cream";
+            break;
+        case 4: 
+            myFaveFood = "Sushi";
+            break;
+        default:
+            myFaveFood = "Pho";
+    }
     /////// write your SWITCH statement above this line /////////
     return myFaveFood;
   };
@@ -71,7 +101,7 @@ const question1 = (myNumber) => {
   const question5 = (myTemp) => {
     let myWeather;
     /////// write your TERNARY OPERATOR statement below this line /////////
-  
+    myWeather = myTemp >= 75? "Great weather!": "Still cold.";
     /////// write your TERNARY OPERATOR statement above this line /////////
     return myWeather;
   };
